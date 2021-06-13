@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <title>PicPic</title>
+            <script>
+                  window.img_paths={"name":"assets","type":"directory","size":"1.21MB","children":[{"name":"0.jpg","type":"file","extension":"jpg","size":"60.56KB","dimension":"700x374","path":"0.jpg"},{"name":"0207.jpg","type":"file","extension":"jpg","size":"85.55KB","dimension":"564x846","path":"0207.jpg"},{"name":"02072.jpg","type":"file","extension":"jpg","size":"143.41KB","dimension":"1100x1390","path":"02072.jpg"},{"name":"1 (2).jpg","type":"file","extension":"jpg","size":"52.5KB","dimension":"700x393","path":"1 (2).jpg"},{"name":"1.2.jpg","type":"file","extension":"jpg","size":"39.76KB","dimension":"1024x682","path":"1.2.jpg"},{"name":"1.8.jpg","type":"file","extension":"jpg","size":"35.93KB","dimension":"undefinedxundefined","path":"1.8.jpg"},{"name":"1.jpg","type":"file","extension":"jpg","size":"7.82KB","dimension":"500x333","path":"1.jpg"},{"name":"10.07.jpg","type":"file","extension":"jpg","size":"112.19KB","dimension":"1920x1080","path":"10.07.jpg"},{"name":"10.10.jpg","type":"file","extension":"jpg","size":"19KB","dimension":"533x300","path":"10.10.jpg"},{"name":"10.12.jpg","type":"file","extension":"jpg","size":"20.3KB","dimension":"undefinedxundefined","path":"10.12.jpg"},{"name":"10.27.jpg","type":"file","extension":"jpg","size":"22.91KB","dimension":"500x303","path":"10.27.jpg"},{"name":"11.17.jpg","type":"file","extension":"jpg","size":"35.55KB","dimension":"499x332","path":"11.17.jpg"},{"name":"11.30.jpg","type":"file","extension":"jpg","size":"15.99KB","dimension":"640x477","path":"11.30.jpg"},{"name":"12.25.jpg","type":"file","extension":"jpg","size":"47.54KB","dimension":"500x334","path":"12.25.jpg"},{"name":"2.jpg","type":"file","extension":"jpg","size":"27.68KB","dimension":"700x393","path":"2.jpg"},{"name":"3.jpg","type":"file","extension":"jpg","size":"56.03KB","dimension":"700x393","path":"3.jpg"},{"name":"4.jpg","type":"file","extension":"jpg","size":"40.58KB","dimension":"700x393","path":"4.jpg"},{"name":"5.jpg","type":"file","extension":"jpg","size":"36.4KB","dimension":"700x393","path":"5.jpg"},{"name":"6.jpg","type":"file","extension":"jpg","size":"56.56KB","dimension":"700x393","path":"6.jpg"},{"name":"7.jpg","type":"file","extension":"jpg","size":"50.56KB","dimension":"700x393","path":"7.jpg"},{"name":"8.jpg","type":"file","extension":"jpg","size":"27.21KB","dimension":"700x393","path":"8.jpg"},{"name":"9 (2).jpg","type":"file","extension":"jpg","size":"94.59KB","dimension":"700x393","path":"9 (2).jpg"},{"name":"9.jpg","type":"file","extension":"jpg","size":"48.67KB","dimension":"1080x608","path":"9.jpg"},{"name":"favicon.png","type":"file","extension":"png","size":"8.01KB","dimension":"200x200","path":"favicon.png"},{"name":"yan.jpg","type":"file","extension":"jpg","size":"49.82KB","dimension":"599x793","path":"yan.jpg"},{"name":"yan2.jpg","type":"file","extension":"jpg","size":"10.05KB","dimension":"267x266","path":"yan2.jpg"}]}
+            </script>
+      </head>
+
+      <script src='./libs/js/include.js'></script>
+
+      <link
+            rel="shortcut icon"
+            href="./favicon.ico"
+      >
+
+      <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+      >
+
+      <style>
+            @import './components/Detail/index.css';
+@import './components/Empty/index.css';
+@import './components/FolderSelect/index.css';
+@import './components/Header/index.css';
+@import './components/ImgItems/index.css';
+@import './components/Msg/index.css';
+@import './components/Pagination/index.css';
+
+      </style>
+
+      <style>
+            @import './libs/css/atom.min.css';
+            @import './styles/init.css';
+            @import './styles/index.css';
+            @import './styles/mobile.css';
+      </style>
+
+      <body>
+            <div
+                  id="landing_wrap"
+                  class="landing_wrap w_100vw h_100vh border_box flex justify_center align_center fixed top_0 left_0 z_index_1000 bg_white transition_normal"
+            >
+                  <div class="landing flex flex_column align_center">
+                        <img
+                              class="logo_landing"
+                              src="./images/logo_picpic_black.png"
+                              alt="logo_picpic_black"
+                        >
+                  </div>
+            </div>
+            <div
+                  id="app"
+                  style="opacity: 0;"
+            >
+                  <div class="header_wrap_placeholder w_100"></div>
+                  <x-header></x-header>
+                  <x-img-items></x-img-items>
+                  <x-empty></x-empty>
+                  <x-detail></x-detail>
+                  <x-pagination></x-pagination>
+                  <x-msg></x-msg>
+                  <x-folder-select></x-folder-select>
+
+                  <include src="./components/Detail/index.html"></include>
+<include src="./components/Empty/index.html"></include>
+<include src="./components/FolderSelect/index.html"></include>
+<include src="./components/Header/index.html"></include>
+<include src="./components/ImgItems/index.html"></include>
+<include src="./components/Msg/index.html"></include>
+<include src="./components/Pagination/index.html"></include>
+
+            </div>
+      </body>
+
+      <script src='./libs/js/vue.min.js'></script>
+      <script src='./libs/js/lodash.chunk.js'></script>
+      <script src='./libs/js/lodash.throttle.js'></script>
+      <script src='./libs/js/clipboard.js'></script>
+      <script src='./index.js'></script>
+
+      <script src="./components/Detail/index.js"></script>
+<script src="./components/Empty/index.js"></script>
+<script src="./components/FolderSelect/index.js"></script>
+<script src="./components/Header/index.js"></script>
+<script src="./components/ImgItems/index.js"></script>
+<script src="./components/Msg/index.js"></script>
+<script src="./components/Pagination/index.js"></script>
+
+
+</html>
