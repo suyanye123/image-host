@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+#dev
+next-env.d.ts
+
+# testing
+/coverage
+
+# production
+/dist
+/assets
+
+# misc
+.DS_Store
+.env*
+
+# debug
+*-debug.log*
+*-error.log*
+*.zip
