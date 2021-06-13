@@ -1,0 +1,16 @@
+{
+  "name": "github-images",
+  "version": "1.0.0",
+  "description": "my pictures host of github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "picpic init",
+    "build": "picpic build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@matrixage/picpic": "^1.5.4"
+  }
+}
